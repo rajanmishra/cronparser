@@ -12,7 +12,7 @@ CLI tool to parse CRON request
 
 2. Install nodejs (http://nodejs.org/en/download/) use ``` node -v ``` to check version and verfiy node installation
 
-3. Clone or download the project from github. https://github.com/rajanmishra/.git
+3. Clone or download the project from github. git@github.com:rajanmishra/cronparser.git
 
 4. Go to the root of Project 
 
@@ -23,16 +23,18 @@ CLI tool to parse CRON request
 7. Run ``` cronparser "*/15 0 1,15 * 1-5 /usr/bin/find" ``` to parse the cron request
 
 You should see this response
-┌──────────────┬──────────────────────────────┐
-│   (index)    │            Values            │
-├──────────────┼──────────────────────────────┤
-│    minute    │         '0 15 30 45'         │
-│     hour     │             '0'              │
-│ day of month │            '1 15'            │
-│    month     │ '1 2 3 4 5 6 7 8 9 10 11 12' │
-│ day of week  │         '1 2 3 4 5'          │
-│   command    │       '/usr/bin/find'        │
-└──────────────┴──────────────────────────────┘
+
+
+| (index)      | Values                     | 
+| -------------|:--------------------------:|
+| minute       |       '0 15 30 45'         |
+| hour         |           '0'              |
+| day of month |          '1 15'            | 
+| month        |'1 2 3 4 5 6 7 8 9 10 11 12'| 
+| day of week  |        '1 2 3 4 5'         | 
+| command      |      '/usr/bin/find'       | 
+
+
 
 8. Run ``` npm install ``` then ``` npm test ``` to run the test cases, we're using jest https://jestjs.io/
 
