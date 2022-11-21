@@ -11,7 +11,8 @@
     "cronparser": "./bin/index.js"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node bin/index.js"
   },
   "keywords": [],
   "author": "Rajan Mishra",

@@ -16,11 +16,13 @@ CLI tool to parse CRON request
 
 4. Go to the root of Project 
 
-5. Run ``` npm install . -g ``` to install cronparser CLI globally
+5. Run ``` npm install ``` then ``` npm install . -g ``` to install cronparser CLI globally
 
-6. Run ``` cronparser --help ``` to see example command to get started
+6. Alternatively you can also use ```npm start "*/15 0 1,15 * 1-5 /usr/bin/find"``` from the root
 
-7. Run ``` cronparser "*/15 0 1,15 * 1-5 /usr/bin/find" ``` to parse the cron request
+7. Run ``` cronparser --help ``` to see example command to get started, if you installed CLI globally other wise use above command
+
+8. Run ``` cronparser "*/15 0 1,15 * 1-5 /usr/bin/find" ``` to parse the cron request
 
 You should see this response
 
@@ -36,9 +38,8 @@ You should see this response
 
 
 
-8. Run ``` npm install ``` then ``` npm test ``` to run the test cases, we're using jest https://jestjs.io/
+9. Run ``` npm test ``` to run the test cases, we're using jest https://jestjs.io/
 
-9. Run ``` npm uninstall . -g  ``` to uninstall the CLI
 
 
 ## Aplication Architechture
