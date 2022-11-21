@@ -1,0 +1,25 @@
+{
+  "name": "cronparser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "engines": {
+    "node": "18.12.1'",
+    "npm": "8.19.2"
+  },
+  "bin": {
+    "cronparser": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Rajan Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "~17.6.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
